@@ -1,0 +1,55 @@
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.fixed-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 1;
+}
+
+.fixed-container:before, .fixed-container:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline;
+}
+
+.fixed-container:after {
+    clear: both;
+}
+
+.masthead { padding-top: 36px; margin-bottom: 36px; }
+.masthead h1, .masthead h2, .masthead p { text-align: center; }
+.masthead h1, .masthead h2 { text-transform:uppercase; line-height: 1.5em; }
+.masthead h1 { margin-bottom: 18px; font-size: 72px; font-weight: 500; }
+.masthead h2 { font-size: 32px; margin-top: -1.1em; font-weight:300; }
+.masthead p { font-size: 24px; line-height: 1.231em; margin:1em 0; }
+
+.row p { font-size: 16px; line-height: 1.3em; }
+
+.whitened { background: rgba(255, 255, 255, 0.95); }
+.whitened .wrapper { padding: 10px; }
+.whitened .padded { padding: 20px; }
+
+.team { text-align:center; margin-left:40px; }
+.team img { margin-bottom:10px; }
+
+body {
+    background: url('/assets/images/bg.png') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: top right !important;
+}
