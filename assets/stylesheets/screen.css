@@ -49,8 +49,10 @@
 .team { text-align:center; margin-left:40px; }
 .team img { margin-bottom:10px; }
 
-.awesomeities { margin-bottom:10px; }
 .awesomeities, .awesomeities li { list-style:none; margin: 0; padding:0; }
+
+.photos { margin:10px 0; }
+.photos img { margin-right:10px; }
 
 body {
     background: url('/assets/images/bg.png') !important;
