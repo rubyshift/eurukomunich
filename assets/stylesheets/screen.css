@@ -1,3 +1,6 @@
+/* Mixins.scss
+ * Snippets of reusable CSS to develop faster and keep code readable
+ * ----------------------------------------------------------------- */
 .clearfix {
     zoom: 1;
 }
@@ -31,32 +34,170 @@
     clear: both;
 }
 
-.masthead { padding-top: 36px; margin-bottom: 36px; }
-.masthead h1, .masthead h2, .masthead p { text-align: center; }
-.masthead h1, .masthead h2 { text-transform:uppercase; line-height: 1.5em; }
-.masthead h1 { margin-bottom: 18px; font-size: 72px; font-weight: 500; }
-.masthead h2 { font-size: 32px; margin-top: -1.1em; font-weight:300; }
-.masthead p { font-size: 24px; line-height: 1.231em; margin:1em 0; }
+article pre {
+    font-size: 13px !important;
+}
 
-.row h2 { margin-bottom:0.5em; }
-.row p { font-size: 16px; line-height: 1.3em; }
-.row li { font-size: 16px; line-height: 1.5em; }
+.toc {
+    background: white;
+    margin-left: 20px;
+    max-width: 500px;
+    padding: 20px;
+    padding-right: 30px;
+    padding: 2em;
+    border: 1px solid #dddddd;
+    float: right;
+    -webkit-box-shadow: -2px 2px 6px #bbbbbb;
+    -moz-box-shadow: -2px 2px 6px #bbbbbb;
+    box-shadow: -2px 2px 6px #bbbbbb;
+}
 
-.whitened { background: rgba(255, 255, 255, 0.95); }
-.whitened .wrapper { padding: 10px; }
-.whitened .padded { padding: 20px; }
+.container > section {
+    margin-top: 60px;
+}
 
-.team { text-align:center; margin-left:40px; }
-.team img { margin-bottom:10px; }
+body.landing {
+    background: white;
+}
 
-.awesomeities, .awesomeities li { list-style:none; margin: 0; padding:0; }
+body {
+    background: rgba(253, 246, 227, 0.6);
+}
 
-.photos { margin:10px 0; }
-.photos img { margin-right:10px; }
+strong {
+    color: #cb4b16;
+}
+
+code {
+    white-space: pre;
+    display: block;
+    padding: 10px;
+    color: gray;
+}
+
+.highlight {
+    line-height: 25px;
+    padding: 3px 4px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+.jumbotron {
+    position: relative;
+}
+
+.jumbotron h1 {
+    margin-bottom: 9px;
+    font-size: 81px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.masthead {
+    padding-top: 36px;
+    margin-bottom: 72px;
+}
+
+.masthead h1, .masthead p {
+    text-align: center;
+}
+
+.masthead h1 {
+    margin-bottom: 18px;
+}
+
+.masthead p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+footer {
+    margin-top: 45px;
+    padding: 35px 0 36px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.marketing h2 {
+    margin: 36px 0 27px;
+    text-align: center;
+}
+
+.whitened {
+    /* background: rgba(255, 255, 255, 0.8); */
+    background: rgba(113, 203, 255, 0.9);
+    color: white;
+    text-shadow: #4FB2E4 0px -1px 0px;
+    -webkit-box-shadow: -2px 2px 6px #bbbbbb;
+    -moz-box-shadow: -2px 2px 6px #bbbbbb;
+    box-shadow: -2px 2px 30px #bbbbbb;
+}
+
+.whitened .wrapper {
+    padding: 10px;
+}
+
+.whitened .padded {
+    padding: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.icon {
+    float: left;
+    margin: 7px 10px 0 0;
+    opacity: 0.8;
+}
+
+.row.even .span4 {
+    height: 220px;
+}
 
 body {
     background: url('/assets/images/bg.png') !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-position: top right !important;
+}
+
+
+.jumbotron h1 {
+    font-family: "Signika Negative", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.jumbotron p {
+    font-family: "Signika Negative", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-family: "Signika Negative", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1.giant {
+    font-size: 10em;
+}
+
+.photos {
+    margin: 10px 0;
+}
+
+.photos img:last-child {
+    margin-right: 0px;
+}
+.photos img {
+    margin-right: 13px;
+}
+
+.row.team {
+    text-align: center;
+}
+.teammate {
+    float: left;
+    width: 135px;
+}
+
+.small {
+    font-size: 1em !important;
 }
